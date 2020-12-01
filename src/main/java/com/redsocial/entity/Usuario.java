@@ -30,7 +30,8 @@ public class Usuario {
 	private String fechaRegistro;
 	private String email;
 	private String estado;
-	private int celular;
+	private String celular;
+	private String direccion;
 	private int idTipoUsuario;
 	
 	@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })

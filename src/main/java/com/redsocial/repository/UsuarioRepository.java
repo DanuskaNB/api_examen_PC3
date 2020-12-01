@@ -10,6 +10,6 @@ import com.redsocial.entity.Usuario;
 
 public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
 
-	@Query("select x from Usuario x where x.nombre = :var_filtro")
+	@Query("select x from Usuario x where x.nombres = :var_filtro")
 	public List<Usuario> listaPorNombre(@Param("var_filtro") String filtro);
 }
